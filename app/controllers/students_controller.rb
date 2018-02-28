@@ -74,7 +74,6 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      debugger
       params.require(:student).permit(:name, :age, :address,subject_ids: [])
     end
 end
