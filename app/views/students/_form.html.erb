@@ -28,20 +28,20 @@
 
 
 <!-- Usa Simple Forms la proxima vez que hagas un Form
- 
- simple_form_for @user do |f| 
-   f.input :name 
-   f.association :company 
-   f.association :roles 
-   f.button :submit 
- end --> 
+
+ simple_form_for @user do |f|
+   f.input :name
+   f.association :company
+   f.association :roles
+   f.button :submit
+ end -->
 
   <div class="field">
-      <% @subjects.each do |subject|%> 
+      <% @subjects.each do |subject|%>
     <ul>
       <li>
-        <%= check_box_tag 'student[subjects][]', subject.id %>  
-        <%= subject.name %>   
+        <%= check_box_tag 'student[subject_ids][]', subject.id %>  
+        <%= subject.name %>
       </li>
     </ul>
   <% end %>
